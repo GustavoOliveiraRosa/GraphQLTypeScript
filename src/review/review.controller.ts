@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
 export class ReviewController {
 
     @Get()
-    async getAll(){
+    async getAllForm(){
         const listUsers = await prisma.form.findMany();
         return listUsers;
     }
