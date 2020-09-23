@@ -1,0 +1,52 @@
+datasource db {
+  provider = "mysql"
+  url = "***"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Form {
+  id          Int       @default(autoincrement()) @id
+  created_at  DateTime? @default(dbgenerated())
+  updated_at  DateTime? @default(dbgenerated())
+  deleted_at  DateTime?
+  questions Questions[]
+  @@map("STB_FORM")
+}
+
+
+model Questions {
+  id          Int       @default(autoincrement()) @id
+  created_at  DateTime? @default(dbgenerated())
+  updated_at  DateTime? @default(dbgenerated())
+  deleted_at  DateTime?
+  id_form  Int?
+  title  String?
+  type  Int?
+  qst1  String?
+  qst2  String?
+  qst3  String?
+  qst4  String?
+  subqst1  String?
+  subqst2  String?
+  subqst3  String?
+  subqst4  String?
+  @@map("STB_QUESTIONS")
+}
+
+
+model Responses {
+  id          Int       @default(autoincrement()) @id
+  created_at  DateTime? @default(dbgenerated())
+  updated_at  DateTime? @default(dbgenerated())
+  deleted_at  DateTime?
+  id_question  Int?
+  response1 String?
+  response2 String?
+  response3 String?
+  response4 String?
+  responseSub String?
+  @@map("STB_RESPONSES")
+}
