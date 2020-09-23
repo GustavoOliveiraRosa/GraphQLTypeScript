@@ -7,7 +7,7 @@ Meu repositório para aprender e praticar meus conhecimentos usando as duas fram
 * npm install @prisma/cli --save-dev
 * npx prisma init
 * sudo npx prisma migrate save --experimental
-* sudo npx prisma up save --experimental
+* sudo npx prisma migrate up --experimental
 * sudo npx prisma generate
 
 **Comandos para a geracao de modulos do NestJS**
