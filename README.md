@@ -10,6 +10,12 @@ Meu repositório para aprender e praticar meus conhecimentos usando as duas fram
 * sudo npx prisma up save --experimental
 * sudo npx prisma generate
 
+**Comandos para a geracao de modulos do NestJS**
+* $ nest g controller review
+* $ nest g provider review/shared/review.service
+* $ nest g module review
+
+
 ** Comandos para finalizar processos, quando api executada duplicadamente ** 
 
 * lsof -i :<porta>
