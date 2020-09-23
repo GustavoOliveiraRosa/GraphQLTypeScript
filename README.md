@@ -14,3 +14,5 @@ Meu repositório para aprender e praticar meus conhecimentos usando as duas fram
 
 * lsof -i :<porta>
 * kill -9 <pid>
+
+
